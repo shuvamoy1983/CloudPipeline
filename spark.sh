@@ -6,7 +6,7 @@ export K8S_TOKEN=/var/run/secrets/kubernetes.io/serviceaccount/token
 
 # Docker runtime image
 export DOCKER_IMAGE=shuvamoy008/spark8s
-export SPARK_DRIVER_NAME=spark-test2-pi
+export SPARK_DRIVER_NAME=spark-pipeline
 
 
 export KafkaBootstrapIP=`kubectl get all -n kafka | grep -i mykafka-kafka-external-bootstrap | awk '{print $4}'`
