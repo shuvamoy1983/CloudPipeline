@@ -25,7 +25,7 @@ object app {
       .set("spark.dynamicAllocation.testing","true")
       .set("spark.streaming.driver.writeAheadLog.closeFileAfterWrite","true")
       .set("spark.streaming.receiver.writeAheadLog.closeFileAfterWrite","true")
-      .set("spark.cassandra.connection.host",")
+      .set("spark.cassandra.connection.host","")
       .set("spark.cassandra.connection.port","9042")
       .set("spark.cassandra.auth.username","cluster1-superuser")
       .set("spark.cassandra.auth.password","")
