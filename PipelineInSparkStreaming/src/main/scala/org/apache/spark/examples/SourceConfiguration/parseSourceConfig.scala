@@ -21,7 +21,7 @@ class Configurations(
   val logLevels: String= Option(_logLevels).getOrElse("WARN")
   val FileConversion: String= Option(_FileConversion).getOrElse("")
   val outputOptions:  Map[String,String]= Option(_outputOptions).getOrElse(Map())
-  val appName: String=Option(_appName).getOrElse("AutoGDS")
+  val appName: String=Option(_appName).getOrElse("DataMigration")
   val KafkaTopic: List[String]=Option(_KafkaTopic).getOrElse(List())
   val KafkaSchemaDataSetName: List[String]=Option(_KafkaSchemaDataSetName).getOrElse(List())
 
