@@ -30,7 +30,7 @@ object ExecuteMain {
     val spark = SparkSession.builder().appName("WriteToES").config(conf).getOrCreate()
     val df = spark.readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", "35.245.237.47:9094")
+      .option("kafka.bootstrap.servers", ":9094")
       .option("subscribe", "topic-emp")
       .option("startingOffsets", "latest") //latest
       .load()
